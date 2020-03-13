@@ -3,7 +3,9 @@ name: github pages
 on:
   push:
     branches:
-      - master
+      - develop
+
+publish_branch: master
 
 jobs:
   build-deploy:
