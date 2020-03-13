@@ -5,8 +5,6 @@ on:
     branches:
       - develop
 
-publish_branch: master
-
 jobs:
   build-deploy:
     runs-on: ubuntu-18.04
@@ -40,3 +38,4 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./dist
+          publish_branch: master
