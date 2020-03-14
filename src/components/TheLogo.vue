@@ -1,5 +1,6 @@
 <template>
     <h1 class="logo">
+        <div class="logo-line"></div>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="632.934"
              height="204.496"
              viewBox="0 0 632.934 204.496">
@@ -61,7 +62,10 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/scss/_variables";
+
     .logo {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -70,5 +74,26 @@
         height: 100vh;
         margin: 0;
         padding: 0 5vw;
+    }
+
+    .logo-line {
+        width: 2px;
+        height: calc(100% + 500px);
+        position: absolute;
+        top: 0;
+        left: calc(10vw - 1px);
+        background-color: $white;
+        z-index: -1;
+        transform-origin: top;
+        animation: .3s ease-out .5s both line;
+    }
+
+    @keyframes line {
+        0% {
+            transform: scaleY(0);
+        }
+        100% {
+            transform: scaleY(1);
+        }
     }
 </style>

@@ -2,9 +2,9 @@
     <ul class="section-list">
         <li v-for="li in list" v-bind:key="li.index"
             class="section-list-child">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                  class="section-list-child__circle">
-                <circle cx="17.5" cy="17.5" r="17.5" fill="#fff"/>
+                <circle cx="25" cy="25" r="20" fill="none" stroke="#fff" stroke-width="3"/>
             </svg>
             <span class="section-list-child__text" v-html="li">
             </span>
@@ -42,6 +42,7 @@
         width: $circle-s;
         height: $circle-s;
         flex-shrink: 0;
+        border-radius: 50%;
     }
 
     .section-list-child__text {

@@ -1,9 +1,5 @@
 <template>
     <div class="section-image">
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
-             class="section-image__circle">
-            <circle cx="17.5" cy="17.5" r="17.5" fill="#fff"/>
-        </svg>
         <img :src="src" :alt="alt" width="100" height="100">
         <p class="section-image__caption" v-html="caption"></p>
     </div>
@@ -34,10 +30,9 @@
 
     .section-image {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-end;
-        margin: 100px 0 150px calc(10vw - #{$circle-m} / 2);
         position: relative;
 
         & > img {
@@ -45,7 +40,6 @@
             max-width: 70vw;
             height: 220px;
             border-radius: 20px;
-            margin-left: 30px;
             object-fit: cover;
         }
     }
@@ -56,6 +50,7 @@
         margin-top: 6px;
         flex-shrink: 0;
         align-self: flex-start;
+        border-radius: 50%;
     }
 
     .section-image__caption {
@@ -63,6 +58,7 @@
         padding: 0;
         font-size: $text-s;
         font-weight: 300;
+        text-align: end;
         color: $white;
     }
 </style>

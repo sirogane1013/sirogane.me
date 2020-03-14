@@ -1,8 +1,8 @@
 <template>
     <div class="section-contents">
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
              class="section-contents__circle">
-            <circle cx="17.5" cy="17.5" r="17.5" fill="#fff"/>
+            <circle cx="25" cy="25" r="20" fill="none" stroke="#fff" stroke-width="3" />
         </svg>
         <span class="section-contents__text">
             <slot/>
@@ -22,7 +22,7 @@
     .section-contents {
         display: flex;
         align-items: flex-start;
-        margin: 0 0 0 calc(10vw - #{$circle-m} / 2);
+        margin: 0 0 50px calc(10vw - #{$circle-m} / 2);
         position: relative;
         color: $white;
     }
@@ -30,8 +30,9 @@
     .section-contents__circle {
         width: $circle-m;
         height: $circle-m;
-        margin-top: 6px;
+        margin-top: 2px;
         flex-shrink: 0;
+        border-radius: 50%;
     }
 
     .section-contents__text {
