@@ -2,7 +2,7 @@
     <div class="section-contents">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
              class="section-contents__circle">
-            <circle id="楕円形_11" data-name="楕円形 11" cx="17.5" cy="17.5" r="17.5" fill="#fff"/>
+            <circle cx="17.5" cy="17.5" r="17.5" fill="#fff"/>
         </svg>
         <span class="section-contents__text">
             <slot/>

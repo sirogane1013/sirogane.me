@@ -2,7 +2,7 @@
     <div class="section-image">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
              class="section-image__circle">
-            <circle id="楕円形_11" data-name="楕円形 11" cx="17.5" cy="17.5" r="17.5" fill="#fff"/>
+            <circle cx="17.5" cy="17.5" r="17.5" fill="#fff"/>
         </svg>
         <img :src="src" :alt="alt" width="100" height="100">
         <p class="section-image__caption" v-html="caption"></p>
