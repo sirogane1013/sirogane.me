@@ -1,7 +1,11 @@
 <template>
     <div class="section-image">
-        <img :src="src" :alt="alt" width="100" height="100">
+        <img :src="src" :alt="alt" width="100" height="100" @click="toggleDesc" @mouseover="willChange" @mouseleave="removeWillChange">
         <p class="section-image__caption" v-html="caption"></p>
+        <p class="section-image__description" v-bind:class="{'show': showDescription}"
+           ref="desc">
+            <slot/>
+        </p>
     </div>
 </template>
 
@@ -21,6 +25,40 @@
         type: String,
         required: true,
       },
+    },
+    data() {
+      return {
+        showDescription: false,
+        descHeight: 0.
+      }
+    },
+    methods: {
+      toggleDesc() {
+        this.showDescription = !this.showDescription;
+
+        const element = this.$refs.desc;
+        if (this.showDescription) {
+          element.style.height = this.descHeight;
+        } else {
+          element.style.height = '0';
+        }
+      },
+      willChange() {
+        this.$refs.desc.style.willChange = "height, opacity";
+      },
+      removeWillChange() {
+        this.$refs.desc.style.willChange = null;
+      }
+    },
+    mounted() {
+      const element = this.$refs.desc;
+      element.style.height = `auto`;
+
+      const {height} = getComputedStyle(element);
+      element.style.height = '0';
+
+      getComputedStyle(element).height;
+      this.descHeight = height;
     }
   }
 </script>
@@ -60,5 +98,19 @@
         font-weight: 300;
         text-align: end;
         color: $white;
+    }
+
+    .section-image__description {
+        width: 450px;
+        max-width: 70vw;
+        margin: 10px 0 0 0;
+        font-size: $text-s;
+        text-align: justify;
+        opacity: 0;
+        transition: height .5s ease, opacity .5s ease;
+
+        &.show {
+            opacity: 1;
+        }
     }
 </style>

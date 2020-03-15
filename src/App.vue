@@ -30,24 +30,40 @@
                 <section-heading>2018</section-heading>
                 <section-contents>
                     <section-image src="/img/2018_Tokyo-Tech-Fes-official-site.png" alt="Tokyo Tech Fes. official site"
-                                   caption="Tokyo Tech Fes.<br>official site"/>
+                                   caption="Tokyo Tech Fes.<br>official site">
+                        東京工業大学学園祭「工大祭」の2018年度公式サイトです。
+                        サイト制作統括として全体の進捗管理を行ったほか、バックエンド・フロントエンドのコーディング等を行いました。
+                        <a href="https://2018.koudaisai.jp">工大祭2018公式サイト</a>
+                    </section-image>
                 </section-contents>
             </section-contents-wrapper>
             <section-contents-wrapper>
                 <section-heading>2019</section-heading>
                 <section-contents>
                     <section-image src="/img/2019_JIZI-welcome-site.png" alt="JIZI welcome site"
-                                   caption="JIZI<br>welcome site"/>
+                                   caption="JIZI<br>welcome site">
+                        工大祭実行委員会"JIZI"の2019年度新入生歓迎サイトです。
+                        青空と桜の花びらをイメージしてデザインしました。
+                        Vue.jsで実装したSPAです。
+                    </section-image>
                 </section-contents>
                 <section-contents>
                     <section-image src="/img/2019_JIZI-tsuyuga-site.png"
                                    alt="JIZI tsuyuga site"
-                                   caption="JIZI<br>tsuyuga site"/>
+                                   caption="JIZI<br>tsuyuga site">
+                        工大祭実行委員会"JIZI"の2019年度合宿サイトです。
+                        青のグラデーションを基調としたスタイリッシュなデザインを目指しました。
+                        Vue.jsで実装したSPAです。PWAなどの、このころトレンドとなっていた技術の導入を積極的に行いました。
+                        <a href="https://sirogane1013.github.io/tsuyuga2019/">つゆがサイト2019</a>
+                    </section-image>
                 </section-contents>
                 <section-contents>
                     <section-image src="/img/2019_Tokyo-Tech-Fes-official-mascot-site.png"
                                    alt="Tokyo Tech Fes. official mascot site"
-                                   caption="Tokyo Tech Fes.<br>official mascot site"/>
+                                   caption="Tokyo Tech Fes.<br>official mascot site">
+                        工大祭公式マスコットキャラクター「テックちゃん」の特設サイトです。
+                        <a href="https://mascot.koudaisai.jp/">工大祭公式マスコットキャラクター特設サイト</a>
+                    </section-image>
                 </section-contents>
             </section-contents-wrapper>
             <section-contents-wrapper>
@@ -55,17 +71,31 @@
                 <section-contents>
                     <section-image src="/img/2020_MovIe-Tech-movie-recommender.png"
                                    alt="MovIe Tech movie recommender"
-                                   caption="MovIe Tech<br>movie recommender"/>
+                                   caption="MovIe Tech<br>movie recommender">
+                        チームで制作した映画推薦サービスです。
+                        ユーザーの入力に対して、事前に学習したデータをもとに、最もおすすめの映画を提案します。
+                        <a href="http://movietech.shop/">movie recommender</a>
+                    </section-image>
                 </section-contents>
                 <section-contents>
                     <section-image src="/img/2020_Personal-Work-blog.png"
                                    alt="Personal Work blog"
-                                   caption="Personal Work<br>blog"/>
+                                   caption="Personal Work<br>blog">
+                        個人製作のブログアプリケーションです。
+                        このころのデザイントレンドだった"Neumorphism"を参考に作成しました。
+                        Gatsbyで実装し、Netlify CMSに対応しています。
+                        <a href="https://sirogane.netlify.com/">Sirogane's Blog</a>
+                    </section-image>
                 </section-contents>
                 <section-contents>
                     <section-image src="/img/2020_Personal-Work-portfolio.png"
                                    alt="Personal Work portfolio"
-                                   caption="Personal Work<br>portfolio"/>
+                                   caption="Personal Work<br>portfolio">
+                        このポートフォリオサイトです。
+                        制作物の遍歴を提示する「タイムライン」を意識してデザインしました。
+                        Vue.jsで実装した単一ページ構成のサイトです。
+                        <a href="https://sirogane1013.github.io">Sirogane's Portfolio</a>
+                    </section-image>
                 </section-contents>
             </section-contents-wrapper>
         </section-wrapper>
