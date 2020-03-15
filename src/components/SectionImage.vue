@@ -104,7 +104,8 @@
         width: 450px;
         max-width: 70vw;
         margin: 10px 0 0 0;
-        font-size: $text-s;
+        font-size: 20px;
+        font-weight: 300;
         text-align: justify;
         opacity: 0;
         transition: height .5s ease, opacity .5s ease;
