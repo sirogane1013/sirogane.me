@@ -103,7 +103,7 @@
             <section-title id="contact-section-title">Contact</section-title>
             <section-contents-wrapper>
                 <section-heading>Email</section-heading>
-                <section-contents><a href="mailto:stlouis.work66@gmail.com">stlouis.work66@gmail.com</a>
+                <section-contents><a href="mailto:contact@sirogane.me">contact@sirogane.me</a>
                 </section-contents>
             </section-contents-wrapper>
             <section-contents-wrapper>
