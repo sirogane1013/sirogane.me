@@ -62,7 +62,7 @@
                                    alt="Tokyo Tech Fes. official mascot site"
                                    caption="Tokyo Tech Fes.<br>official mascot site">
                         工大祭公式マスコットキャラクター「テックちゃん」の特設サイトです。
-                        <a href="https://mascot.koudaisai.jp/">工大祭公式マスコットキャラクター特設サイト</a>
+                        <a href="https://mascot.koudaisai.jp">工大祭公式マスコットキャラクター特設サイト</a>
                     </section-image>
                 </section-contents>
             </section-contents-wrapper>
@@ -74,7 +74,7 @@
                                    caption="MovIe Tech<br>movie recommender">
                         チームで制作した映画推薦サービスです。
                         ユーザーの入力に対して、事前に学習したデータをもとに、最もおすすめの映画を提案します。
-                        <a href="http://movietech.shop/">movie recommender</a>
+                        <a href="http://movietech.shop">movie recommender</a>
                     </section-image>
                 </section-contents>
                 <section-contents>
@@ -84,7 +84,7 @@
                         個人製作のブログアプリケーションです。
                         このころのデザイントレンドだった"Neumorphism"を参考に作成しました。
                         Gatsbyで実装し、Netlify CMSに対応しています。
-                        <a href="https://sirogane.netlify.com/">Sirogane's Blog</a>
+                        <a href="https://blog.sirogane.me">Sirogane's Blog</a>
                     </section-image>
                 </section-contents>
                 <section-contents>
@@ -94,7 +94,7 @@
                         このポートフォリオサイトです。
                         制作物の遍歴を提示する「タイムライン」を意識してデザインしました。
                         Vue.jsで実装した単一ページ構成のサイトです。
-                        <a href="https://sirogane1013.github.io">Sirogane's Portfolio</a>
+                        <a href="https://sirogane.me">Sirogane's Portfolio</a>
                     </section-image>
                 </section-contents>
             </section-contents-wrapper>
@@ -111,7 +111,7 @@
                 <section-list :list="[
                         `<a href='https://github.com/sirogane1013'>Github</a>`,
                         `<a href='https://qiita.com/sirogane'>Qiita</a>`,
-                        `<a href='https://sirogane.netlify.com'>Blog</a>`,
+                        `<a href='https://blog.sirogane.me'>Blog</a>`,
                         `<a href='https://twitter.com/sirogane1013'>Twitter</a>`,
                 ]"/>
             </section-contents-wrapper>
