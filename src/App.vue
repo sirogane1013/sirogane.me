@@ -29,7 +29,8 @@
             <section-contents-wrapper>
                 <section-heading>2018</section-heading>
                 <section-contents>
-                    <section-image src="/img/2018_Tokyo-Tech-Fes-official-site.png" alt="Tokyo Tech Fes. official site"
+                    <section-image :img="require('../public/img/2018_Tokyo-Tech-Fes-official-site.png')"
+                                   alt="Tokyo Tech Fes. official site"
                                    caption="Tokyo Tech Fes.<br>official site">
                         東京工業大学学園祭「工大祭」の2018年度公式サイトです。
                         サイト制作統括として全体の進捗管理を行ったほか、バックエンド・フロントエンドのコーディング等を行いました。
@@ -40,7 +41,8 @@
             <section-contents-wrapper>
                 <section-heading>2019</section-heading>
                 <section-contents>
-                    <section-image src="/img/2019_JIZI-welcome-site.png" alt="JIZI welcome site"
+                    <section-image :img="require('../public/img/2019_JIZI-welcome-site.png')"
+                                   alt="JIZI welcome site"
                                    caption="JIZI<br>welcome site">
                         工大祭実行委員会"JIZI"の2019年度新入生歓迎サイトです。
                         青空と桜の花びらをイメージしてデザインしました。
@@ -48,7 +50,7 @@
                     </section-image>
                 </section-contents>
                 <section-contents>
-                    <section-image src="/img/2019_JIZI-tsuyuga-site.png"
+                    <section-image :img="require('../public/img/2019_JIZI-tsuyuga-site.png')"
                                    alt="JIZI tsuyuga site"
                                    caption="JIZI<br>tsuyuga site">
                         工大祭実行委員会"JIZI"の2019年度合宿サイトです。
@@ -58,7 +60,7 @@
                     </section-image>
                 </section-contents>
                 <section-contents>
-                    <section-image src="/img/2019_Tokyo-Tech-Fes-official-mascot-site.png"
+                    <section-image :img="require('../public/img/2019_Tokyo-Tech-Fes-official-mascot-site.png')"
                                    alt="Tokyo Tech Fes. official mascot site"
                                    caption="Tokyo Tech Fes.<br>official mascot site">
                         工大祭公式マスコットキャラクター「テックちゃん」の特設サイトです。
@@ -69,7 +71,7 @@
             <section-contents-wrapper>
                 <section-heading>2020</section-heading>
                 <section-contents>
-                    <section-image src="/img/2020_MovIe-Tech-movie-recommender.png"
+                    <section-image :img="require('../public/img/2020_MovIe-Tech-movie-recommender.png')"
                                    alt="MovIe Tech movie recommender"
                                    caption="MovIe Tech<br>movie recommender">
                         チームで制作した映画推薦サービスです。
@@ -78,7 +80,7 @@
                     </section-image>
                 </section-contents>
                 <section-contents>
-                    <section-image src="/img/2020_Personal-Work-blog.png"
+                    <section-image :img="require('../public/img/2020_Personal-Work-blog.png')"
                                    alt="Personal Work blog"
                                    caption="Personal Work<br>blog">
                         個人製作のブログアプリケーションです。
@@ -88,7 +90,7 @@
                     </section-image>
                 </section-contents>
                 <section-contents>
-                    <section-image src="/img/2020_Personal-Work-portfolio.png"
+                    <section-image :img="require('../public/img/2020_Personal-Work-portfolio.png')"
                                    alt="Personal Work portfolio"
                                    caption="Personal Work<br>portfolio">
                         このポートフォリオサイトです。
@@ -140,7 +142,7 @@
       SectionContents,
       SectionList,
       SectionImage,
-    }
+    },
   }
 </script>
 

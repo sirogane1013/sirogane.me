@@ -1,6 +1,9 @@
 <template>
-    <div class="section-image">
-        <img :src="src" :alt="alt" width="100" height="100" @click="toggleDesc" @mouseover="willChange" @mouseleave="removeWillChange">
+    <div class="section-image" v-lazy-container="{ selector: 'img' }">
+        <img :data-src="img.src"
+             :data-loading="img.preSrc"
+             :alt="alt" width="100" height="100" @click="toggleDesc" @mouseover="willChange"
+             @mouseleave="removeWillChange">
         <p class="section-image__caption" v-html="caption"></p>
         <p class="section-image__description" v-bind:class="{'show': showDescription}"
            ref="desc">
@@ -13,8 +16,8 @@
   export default {
     name: 'SectionImage',
     props: {
-      src: {
-        type: String,
+      img: {
+        type: Object,
         required: true,
       },
       alt: {
@@ -79,6 +82,12 @@
             height: 220px;
             border-radius: 20px;
             object-fit: cover;
+            filter: blur(5px);
+            transition: filter .2s;
+
+            &[lazy=loaded] {
+                filter: none
+            }
         }
     }
 
