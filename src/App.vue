@@ -114,7 +114,7 @@
                         `<a href='https://github.com/sirogane1013'>Github</a>`,
                         `<a href='https://qiita.com/sirogane'>Qiita</a>`,
                         `<a href='https://blog.sirogane.me'>Blog</a>`,
-                        `<a href='https://twitter.com/sirogane1013'>Twitter</a>`,
+                        `<a href='https://twitter.com/SiroganeTitech'>Twitter</a>`,
                 ]"/>
             </section-contents-wrapper>
         </section-wrapper>
