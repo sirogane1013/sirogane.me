@@ -55,7 +55,7 @@
                                    caption="JIZI<br>tsuyuga site">
                         工大祭実行委員会"JIZI"の2019年度合宿サイトです。
                         青のグラデーションを基調としたスタイリッシュなデザインを目指しました。
-                        Vue.jsで実装したSPAです。PWAなどの、このころトレンドとなっていた技術の導入を積極的に行いました。
+                        Vue.jsで実装したSPAです。PWAなど、トレンドとなっていた技術の導入を積極的に行いました。
                         <a href="https://sirogane1013.github.io/tsuyuga2019/">つゆがサイト2019</a>
                     </section-image>
                 </section-contents>
@@ -84,7 +84,7 @@
                                    alt="Personal Work blog"
                                    caption="Personal Work<br>blog">
                         個人製作のブログアプリケーションです。
-                        このころのデザイントレンドだった"Neumorphism"を参考に作成しました。
+                        このころのデザイントレンドだった"Neumorphism"を取り入れました。
                         Gatsbyで実装し、Netlify CMSに対応しています。
                         <a href="https://blog.sirogane.me">Sirogane's Blog</a>
                     </section-image>
@@ -94,9 +94,21 @@
                                    alt="Personal Work portfolio"
                                    caption="Personal Work<br>portfolio">
                         このポートフォリオサイトです。
-                        制作物の遍歴を提示する「タイムライン」を意識してデザインしました。
+                        制作物の遍歴を見せる「タイムライン」としてデザインしました。
                         Vue.jsで実装した単一ページ構成のサイトです。
                         <a href="https://sirogane.me">Sirogane's Portfolio</a>
+                    </section-image>
+                </section-contents>
+            </section-contents-wrapper>
+            <section-contents-wrapper>
+                <section-heading>2021</section-heading>
+                <section-contents>
+                    <section-image :img="require('../public/img/2021_Intern-SubManage.png')"
+                                   alt="Intern SubManage"
+                                   caption="Intern<br>SubManage">
+                        インターンシップの課題として作成した"サブスクリプションサービス管理アプリ"です。
+                        利用しているサービスを登録し、支払い状況を可視化します。
+                        インフラ構築からフロントエンド実装まで行い、秒間60リクエストに対応できる可用性を実現しました。
                     </section-image>
                 </section-contents>
             </section-contents-wrapper>
