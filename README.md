@@ -1,24 +1,18 @@
-# sirogane1013.github.io
+# 🎥sirogane.me
 
-## Project setup
-```
-yarn install
-```
+![Si](https://user-images.githubusercontent.com/40066368/136481346-a5298ec1-778f-4feb-9005-c1828c9bea73.png)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## ❓What's This
+@sirogane1013 のポートフォリオサイト
 
-### Compiles and minifies for production
-```
-yarn build
-```
+🔗https://sirogane.me
 
-### Lints and fixes files
-```
-yarn lint
-```
+## 💻Development
+- Vue.js 2.6
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 🏗️How to Build
+
+```
+$ npm install
+$ npm run build
+```
