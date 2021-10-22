@@ -39,7 +39,7 @@
     .section-title {
         display: flex;
         align-items: center;
-        margin: 0 0 700px calc(10vw - #{$circle-double} / 2);
+        margin: 0 0 300px calc(10vw - #{$circle-double} / 2);
         padding: 0;
         position: relative;
         color: $white;
