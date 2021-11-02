@@ -1,6 +1,9 @@
 <template>
   <div class="section-image" v-lazy-container="{ selector: 'img' }">
-    <div class="section-image__wrapper">
+    <div :class="{
+      'section-image__wrapper': true,
+      'section-image__wrapper--open': showDescription,
+      }">
       <img :data-src="img.src"
            :data-loading="img.preSrc"
            :alt="alt" @click="toggleDesc" @mouseover="willChange"
@@ -75,15 +78,14 @@ export default {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-end;
   position: relative;
 
 }
 
 .section-image__wrapper {
-  width: 450px;
+  width: 640px;
   max-width: 70vw;
-  height: 220px;
+  height: 300px;
   border-radius: 20px;
   cursor: pointer;
   overflow: hidden;
@@ -98,6 +100,23 @@ export default {
       filter: none
     }
   }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    background: rgba(102, 102, 102, 0.5);
+    pointer-events: none;
+    transition: background .5s;
+  }
+
+  &--open:after {
+    background: none;
+  }
 }
 
 .section-image__circle {
@@ -110,16 +129,19 @@ export default {
 }
 
 .section-image__caption {
-  margin: 0 0 0 45px;
+  margin: .5em 0;
   padding: 0;
   font-size: $text-s;
-  font-weight: 300;
-  text-align: end;
+  font-weight: 400;
   color: $white;
+  text-align: start;
+  @media (min-width: 576px) {
+    text-align: center;
+  }
 }
 
 .section-image__description {
-  width: 450px;
+  width: 640px;
   max-width: 70vw;
   margin: 10px 0 0 0;
   font-size: 20px;

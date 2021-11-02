@@ -33,8 +33,12 @@
           <section-image :img="require('../public/img/2018_Tokyo-Tech-Fes-official-site.png')"
                          alt="Tokyo Tech Fes. official site"
                          caption="Tokyo Tech Fes.<br>official site">
-            東京工業大学学園祭「工大祭」の2018年度公式サイトです。
+            <h4>About</h4>
+            東工大学園祭「工大祭」の2018年度公式サイトです。
             サイト制作統括として全体の進捗管理を行ったほか、バックエンド・フロントエンドのコーディング等を行いました。
+            <h4>Used</h4>
+            PHP, JavaScript, FuelPHP, MySQL
+            <h4>Link</h4>
             <a href="https://2018.koudaisai.jp">工大祭2018公式サイト</a>
           </section-image>
         </section-contents>
@@ -45,18 +49,25 @@
           <section-image :img="require('../public/img/2019_JIZI-welcome-site.png')"
                          alt="JIZI welcome site"
                          caption="JIZI<br>welcome site">
+            <h4>About</h4>
             工大祭実行委員会"JIZI"の2019年度新入生歓迎サイトです。
             青空と桜の花びらをイメージしてデザインしました。
             Vue.jsで実装したSPAです。
+            <h4>Used</h4>
+            PHP, JavaScript, Laravel, Vue.js, MySQL
           </section-image>
         </section-contents>
         <section-contents>
           <section-image :img="require('../public/img/2019_JIZI-tsuyuga-site.png')"
                          alt="JIZI tsuyuga site"
                          caption="JIZI<br>tsuyuga site">
+            <h4>About</h4>
             工大祭実行委員会"JIZI"の2019年度合宿サイトです。
             青のグラデーションを基調としたスタイリッシュなデザインを目指しました。
             Vue.jsで実装したSPAです。PWAなど、トレンドとなっていた技術の導入を積極的に行いました。
+            <h4>Used</h4>
+            JavaScript, Vue.js
+            <h4>Link</h4>
             <a href="https://sirogane1013.github.io/tsuyuga2019/">つゆがサイト2019</a>
           </section-image>
         </section-contents>
@@ -64,7 +75,9 @@
           <section-image :img="require('../public/img/2019_Tokyo-Tech-Fes-official-mascot-site.png')"
                          alt="Tokyo Tech Fes. official mascot site"
                          caption="Tokyo Tech Fes.<br>official mascot site">
+            <h4>About</h4>
             工大祭公式マスコットキャラクター「テックちゃん」の特設サイトです。
+            <h4>Link</h4>
             <a href="https://mascot.koudaisai.jp">工大祭公式マスコットキャラクター特設サイト</a>
           </section-image>
         </section-contents>
@@ -75,8 +88,10 @@
           <section-image :img="require('../public/img/2020_MovIe-Tech-movie-recommender.png')"
                          alt="MovIe Tech movie recommender"
                          caption="MovIe Tech<br>movie recommender">
+            <h4>About</h4>
             チームで制作した映画推薦サービスです。
             ユーザーの入力に対して、事前に学習したデータをもとに、最もおすすめの映画を提案します。
+            <h4>Link</h4>
             <a href="http://movietech.shop">movie recommender</a>
           </section-image>
         </section-contents>
@@ -84,9 +99,13 @@
           <section-image :img="require('../public/img/2020_Personal-Work-blog.png')"
                          alt="Personal Work blog"
                          caption="Personal Work<br>blog">
+            <h4>About</h4>
             個人製作のブログアプリケーションです。
             このころのデザイントレンドだった"Neumorphism"を取り入れました。
             Gatsbyで実装し、Netlify CMSに対応しています。
+            <h4>Used</h4>
+            JavaScript, React
+            <h4>Link</h4>
             <a href="https://blog.sirogane.me">Sirogane's Blog</a>
           </section-image>
         </section-contents>
@@ -94,9 +113,13 @@
           <section-image :img="require('../public/img/2020_Personal-Work-portfolio.png')"
                          alt="Personal Work portfolio"
                          caption="Personal Work<br>portfolio">
+            <h4>About</h4>
             このポートフォリオサイトです。
             制作物の遍歴を見せる「タイムライン」としてデザインしました。
             Vue.jsで実装した単一ページ構成のサイトです。
+            <h4>Used</h4>
+            JavaScript, Vue.js
+            <h4>Link</h4>
             <a href="https://sirogane.me">Sirogane's Portfolio</a>
           </section-image>
         </section-contents>
@@ -107,9 +130,12 @@
           <section-image :img="require('../public/img/2021_Intern-SubManage.png')"
                          alt="Intern SubManage"
                          caption="Intern<br>SubManage">
+            <h4>About</h4>
             インターンシップの課題として作成した"サブスクリプションサービス管理アプリ"です。
             利用しているサービスを登録し、支払い状況を可視化します。
             インフラ構築からフロントエンド実装まで行い、秒間60リクエストに対応できる可用性を実現しました。
+            <h4>Used</h4>
+            PHP, JavaScript, Laravel, Vue.js, MySQL
           </section-image>
         </section-contents>
       </section-contents-wrapper>
@@ -174,6 +200,16 @@ export default {
     & > .section-line {
       height: calc(100% + 100px);
     }
+  }
+}
+
+h4 {
+  font-weight: normal;
+  font-size: $text-s;
+  margin: .3em 0 0 0;
+
+  &:first-of-type {
+    margin: 0;
   }
 }
 </style>
