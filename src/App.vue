@@ -2,7 +2,7 @@
   <div id="app">
     <the-menu/>
     <the-logo/>
-    <section-wrapper id="about-section" color="red">
+    <section-wrapper id="about-section" color="blue">
       <section-title id="about-section-title">About</section-title>
       <section-contents-wrapper>
         <section-heading>Screen Name</section-heading>
@@ -25,7 +25,7 @@
                 ]"/>
       </section-contents-wrapper>
     </section-wrapper>
-    <section-wrapper id="works-section" color="blue">
+    <section-wrapper id="works-section" color="red">
       <section-title id="works-section-title">Works</section-title>
       <section-contents-wrapper>
         <section-heading>2018</section-heading>
@@ -136,6 +136,18 @@
             インフラ構築からフロントエンド実装まで行い、秒間60リクエストに対応できる可用性を実現しました。
             <h4>Used</h4>
             PHP, JavaScript, Laravel, Vue.js, MySQL
+          </section-image>
+        </section-contents>
+        <section-contents>
+          <section-image :img="require('../public/img/2021_Intern-Push-the-Vote-Out.png')"
+                         alt="Push the Vote Out"
+                         caption="Intern<br>Push the Vote Out">
+            <h4>About</h4>
+            ハッカソン形式のインターンシップで作成したアプリケーションです。
+            サッカーの試合に賭けをして、同じ予想の人達でチャットを楽しみます。
+            ７人のチームで開発を行い、フロントエンドの実装を主に担当しました。
+            <h4>Used</h4>
+            Python, JavaScript, Django, Vue.js
           </section-image>
         </section-contents>
       </section-contents-wrapper>
