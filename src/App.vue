@@ -2,7 +2,7 @@
   <div id="app">
     <the-menu/>
     <the-logo/>
-    <section-wrapper id="about-section" color="blue">
+    <section-wrapper id="about-section" color="red">
       <section-title id="about-section-title">About</section-title>
       <section-contents-wrapper>
         <section-heading>Screen Name</section-heading>
@@ -25,7 +25,7 @@
                 ]"/>
       </section-contents-wrapper>
     </section-wrapper>
-    <section-wrapper id="works-section" color="red">
+    <section-wrapper id="works-section" color="blue">
       <section-title id="works-section-title">Works</section-title>
       <section-contents-wrapper>
         <section-heading>2018</section-heading>
