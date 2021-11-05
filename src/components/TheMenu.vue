@@ -165,7 +165,7 @@ export default {
   height: 50px;
   top: 20px;
   right: 10px;
-  z-index: 2;
+  z-index: 3;
   cursor: pointer;
 }
 
@@ -175,7 +175,7 @@ export default {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
   transition: opacity 0.3s;
   pointer-events: none;

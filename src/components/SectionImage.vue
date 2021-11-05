@@ -8,9 +8,21 @@
            :data-loading="img.preSrc"
            :alt="alt" @click="toggleDesc" @mouseover="willChange"
            @mouseleave="removeWillChange">
+      <p :class="{
+        'section-image__over-caption': true,
+        'section-image__over-caption--open': showDescription,
+        }"
+         v-html="caption"/>
     </div>
-    <p class="section-image__caption" v-html="caption"></p>
-    <p class="section-image__description" v-bind:class="{'show': showDescription}"
+    <p :class="{
+      'section-image__caption': true,
+      'section-image__caption--close': !showDescription,
+      }"
+       v-html="caption"/>
+    <p :class="{
+      'section-image__description': true,
+      'section-image__description--open': showDescription,
+      }"
        ref="desc">
       <slot/>
     </p>
@@ -109,7 +121,7 @@ export default {
     width: 100%;
     height: 300px;
     border-radius: 20px;
-    background: rgba(102, 102, 102, 0.5);
+    background: rgba(26, 26, 26, 0.7);
     pointer-events: none;
     transition: background .5s;
   }
@@ -128,6 +140,28 @@ export default {
   border-radius: 50%;
 }
 
+.section-image__over-caption {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  margin: 0;
+  font-size: $text-s;
+  font-weight: 400;
+  opacity: 1;
+  z-index: 1;
+  transition: transform .3s, opacity .3s;
+  pointer-events: none;
+  &--open {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+}
+
 .section-image__caption {
   margin: .5em 0;
   padding: 0;
@@ -135,8 +169,17 @@ export default {
   font-weight: 400;
   color: $white;
   text-align: start;
+  transition: opacity .3s, transform .3s;
+  transition-delay: .2s;
+  opacity: 1;
   @media (min-width: 576px) {
     text-align: center;
+  }
+
+  &--close {
+    opacity: 0;
+    transform: translateY(-2.5px);
+    transition-delay: 0s;
   }
 }
 
@@ -148,10 +191,14 @@ export default {
   font-weight: 300;
   text-align: justify;
   opacity: 0;
-  transition: height .5s ease, opacity .5s ease;
+  transform: translateY(-5px);
+  transition: height .5s ease, opacity .5s ease, transform .5s;
+  transition-delay: 0s;
 
-  &.show {
+  &--open {
     opacity: 1;
+    transform: translateY(0);
+    transition: height .5s, opacity .5s .2s, transform .5s;
   }
 }
 </style>
